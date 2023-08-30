@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "luckius_mortar",
+	"version": "${version}",
+	"name": "Luckius' Mortar",
+	"description": "A mod inspired by CT Mortar (1.12.x) for modern Minecraft versions",
+	"authors": [
+		"Luckius"
+	],
+	"contact": {
+		"sources": "https://github.com/MrLucky974/luckius-mortar-fabric"
+	},
+	"license": "MIT",
+	"icon": "assets/luckius_mortar/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.luckius.luckius_mortar.MortarMod"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

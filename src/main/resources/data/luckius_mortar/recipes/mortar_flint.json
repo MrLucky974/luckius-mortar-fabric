@@ -1,0 +1,9 @@
+{
+  "type": "luckius_mortar:mortar",
+  "ingredient": {
+    "item": "minecraft:gravel"
+  },
+  "result": "minecraft:flint",
+  "count": 1,
+  "damage": 1
+}

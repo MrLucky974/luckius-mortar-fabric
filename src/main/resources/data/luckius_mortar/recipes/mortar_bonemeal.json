@@ -1,0 +1,9 @@
+{
+  "type": "luckius_mortar:mortar",
+  "ingredient": {
+    "item": "minecraft:bone"
+  },
+  "result": "minecraft:bone_meal",
+  "count": 3,
+  "damage": 1
+}

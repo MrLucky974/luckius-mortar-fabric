@@ -15,7 +15,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.luckius.luckius_mortar.MortarMod"
+          "net.luckius.luckius_mortar.MortarMod"
 		]
 	},
 	"depends": {

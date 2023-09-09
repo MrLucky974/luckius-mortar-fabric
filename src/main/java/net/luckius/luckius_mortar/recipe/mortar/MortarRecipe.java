@@ -1,6 +1,6 @@
-package com.luckius.luckius_mortar.recipe.mortar;
+package net.luckius.luckius_mortar.recipe.mortar;
 
-import com.luckius.luckius_mortar.recipe.ModRecipes;
+import net.luckius.luckius_mortar.recipe.ModRecipes;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;

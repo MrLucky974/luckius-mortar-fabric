@@ -1,6 +1,6 @@
-package com.luckius.luckius_mortar.item;
+package net.luckius.luckius_mortar.item;
 
-import com.luckius.luckius_mortar.item.custom.MortarItem;
+import net.luckius.luckius_mortar.item.custom.MortarItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 

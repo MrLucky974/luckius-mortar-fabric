@@ -1,7 +1,7 @@
-package com.luckius.luckius_mortar.recipe;
+package net.luckius.luckius_mortar.recipe;
 
-import com.luckius.luckius_mortar.recipe.mortar.MortarRecipe;
-import com.luckius.luckius_mortar.recipe.mortar.MortarRecipeSerializer;
+import net.luckius.luckius_mortar.recipe.mortar.MortarRecipe;
+import net.luckius.luckius_mortar.recipe.mortar.MortarRecipeSerializer;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
 

@@ -1,7 +1,7 @@
-package com.luckius.luckius_mortar;
+package net.luckius.luckius_mortar;
 
-import com.luckius.luckius_mortar.item.ModItems;
-import com.luckius.luckius_mortar.recipe.ModRecipes;
+import net.luckius.luckius_mortar.item.ModItems;
+import net.luckius.luckius_mortar.recipe.ModRecipes;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;

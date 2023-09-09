@@ -1,4 +1,4 @@
-package com.luckius.luckius_mortar.recipe.mortar;
+package net.luckius.luckius_mortar.recipe.mortar;
 
 import com.google.gson.JsonObject;
 import net.minecraft.item.ItemStack;

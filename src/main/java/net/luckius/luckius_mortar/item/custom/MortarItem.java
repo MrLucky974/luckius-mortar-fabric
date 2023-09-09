@@ -1,7 +1,7 @@
-package com.luckius.luckius_mortar.item.custom;
+package net.luckius.luckius_mortar.item.custom;
 
-import com.luckius.luckius_mortar.recipe.ModRecipes;
-import com.luckius.luckius_mortar.recipe.mortar.MortarRecipe;
+import net.luckius.luckius_mortar.recipe.ModRecipes;
+import net.luckius.luckius_mortar.recipe.mortar.MortarRecipe;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.inventory.StackReference;

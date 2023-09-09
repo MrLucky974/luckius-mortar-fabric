@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "luckius_mortar:wooden_mortar",
+    "luckius_mortar:stone_mortar",
+    "luckius_mortar:iron_mortar",
+    "luckius_mortar:diamond_mortar"
+  ]
+}

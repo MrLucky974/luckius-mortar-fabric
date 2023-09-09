@@ -16,6 +16,9 @@
 	"entrypoints": {
 		"main": [
 			"net.luckius.luckius_mortar.LuckiusMortar"
+		],
+		"fabric-datagen": [
+			"net.luckius.luckius_mortar.datagen.LuckiusMortarDatagen"
 		]
 	},
 	"depends": {

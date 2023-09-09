@@ -1,6 +1,9 @@
 {
-  "item.luckius_mortar.wooden_mortar": "Wooden Mortar & Pestle",
-  "item.luckius_mortar.stone_mortar": "Stone Mortar & Pestle",
-  "item.luckius_mortar.iron_mortar": "Iron Mortar & Pestle",
-  "item.luckius_mortar.diamond_mortar": "Diamond Mortar & Pestle"
+  "item.luckius_mortar.wooden_mortar": "Wooden Mortar",
+  "item.luckius_mortar.stone_mortar": "Stone Mortar",
+  "item.luckius_mortar.iron_mortar": "Iron Mortar",
+  "item.luckius_mortar.diamond_mortar": "Diamond Mortar",
+
+  "tag.item.luckius_mortar.mortars": "Mortars",
+  "emi.category.luckius_mortar.mortar": "Mortar"
 }

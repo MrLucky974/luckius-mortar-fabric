@@ -19,6 +19,9 @@
 		],
 		"fabric-datagen": [
 			"net.luckius.luckius_mortar.datagen.LuckiusMortarDatagen"
+		],
+		"emi": [
+			"net.luckius.luckius_mortar.emi.LuckiusMortarEmiPlugin"
 		]
 	},
 	"depends": {

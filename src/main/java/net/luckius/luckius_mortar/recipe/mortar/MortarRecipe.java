@@ -9,6 +9,7 @@ import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.world.World;
 
 public class MortarRecipe implements Recipe<Inventory> {
@@ -42,6 +43,10 @@ public class MortarRecipe implements Recipe<Inventory> {
 	@Override
 	public ItemStack getOutput(DynamicRegistryManager registryManager) {
 		return this.output;
+	}
+
+	public Ingredient getInput() {
+		return this.input;
 	}
 
 	public int getDamage() {

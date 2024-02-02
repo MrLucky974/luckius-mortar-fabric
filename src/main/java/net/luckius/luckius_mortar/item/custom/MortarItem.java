@@ -8,9 +8,9 @@ import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.inventory.StackReference;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ClickType;
 import net.minecraft.world.World;
 
@@ -35,7 +35,7 @@ public class MortarItem extends Item {
 
 			SimpleInventory inventory = new SimpleInventory(1);
 			inventory.setStack(0, new ItemStack(input.getItem(), 1));
-			Optional<MortarRecipe> match = world.getRecipeManager().getFirstMatch(ModRecipes.MORTAR_RECIPE, inventory, world);
+			Optional<MortarRecipe> match = world.getRecipeManager().getFirstMatch(ModRecipes.MORTAR_RECIPE, inventory, world).map(RecipeEntry::value);
 
 			if (match.isEmpty()) return false; // Check if a recipe was found
 
@@ -43,7 +43,7 @@ public class MortarItem extends Item {
 
 			MortarRecipe recipe = match.get();
 
-			ItemStack output = recipe.getOutput(null).copy();
+			ItemStack output = recipe.getResult(null).copy();
 			if (!player.getInventory().insertStack(output)) {
 				player.dropStack(output); // Drop the remains
 			}

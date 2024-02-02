@@ -3,12 +3,12 @@ package net.luckius.luckius_mortar.emi;
 import dev.emi.emi.api.EmiPlugin;
 import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
-import dev.emi.emi.api.render.EmiTexture;
 import dev.emi.emi.api.stack.EmiStack;
 import net.luckius.luckius_mortar.LuckiusMortar;
 import net.luckius.luckius_mortar.item.ModItems;
 import net.luckius.luckius_mortar.recipe.ModRecipes;
 import net.luckius.luckius_mortar.recipe.mortar.MortarRecipe;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.recipe.RecipeManager;
 import net.minecraft.util.Identifier;
 
@@ -28,7 +28,7 @@ public class LuckiusMortarEmiPlugin implements EmiPlugin {
 
         RecipeManager manager = registry.getRecipeManager();
 
-        for (MortarRecipe recipe : manager.listAllOfType(ModRecipes.MORTAR_RECIPE)) {
+        for (RecipeEntry<MortarRecipe> recipe : manager.listAllOfType(ModRecipes.MORTAR_RECIPE)) {
             registry.addRecipe(new MortarEmiRecipe(recipe));
         }
     }

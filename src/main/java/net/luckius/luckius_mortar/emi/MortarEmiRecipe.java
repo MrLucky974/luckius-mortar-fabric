@@ -6,13 +6,14 @@ import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.widget.WidgetHolder;
 import net.luckius.luckius_mortar.recipe.mortar.MortarRecipe;
+import net.minecraft.recipe.RecipeEntry;
 
 public class MortarEmiRecipe extends BasicEmiRecipe {
 
-    public MortarEmiRecipe(MortarRecipe recipe) {
-        super(LuckiusMortarEmiPlugin.MORTAR_RECIPE_CATEGORY, recipe.getId(), 70, 18);
-        this.inputs.add(EmiIngredient.of(recipe.getInput()));
-        this.outputs.add(EmiStack.of(recipe.getOutput(null)));
+    public MortarEmiRecipe(RecipeEntry<MortarRecipe> recipe) {
+        super(LuckiusMortarEmiPlugin.MORTAR_RECIPE_CATEGORY, recipe.id(), 70, 18);
+        this.inputs.add(EmiIngredient.of(recipe.value().getInput()));
+        this.outputs.add(EmiStack.of(recipe.value().getResult(null)));
     }
 
     @Override

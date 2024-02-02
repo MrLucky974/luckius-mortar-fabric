@@ -8,18 +8,14 @@ import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.registry.DynamicRegistryManager;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.world.World;
 
 public class MortarRecipe implements Recipe<Inventory> {
-	private final Identifier id;
 	final Ingredient input;
 	final ItemStack output;
 	final int damage;
 
-	public MortarRecipe(Identifier id, Ingredient input, ItemStack output, int damage) {
-		this.id = id;
+	public MortarRecipe(Ingredient input, ItemStack output, int damage) {
 		this.input = input;
 		this.output = output;
 		this.damage = damage;
@@ -41,7 +37,7 @@ public class MortarRecipe implements Recipe<Inventory> {
 	}
 
 	@Override
-	public ItemStack getOutput(DynamicRegistryManager registryManager) {
+	public ItemStack getResult(DynamicRegistryManager registryManager) {
 		return this.output;
 	}
 
@@ -54,11 +50,6 @@ public class MortarRecipe implements Recipe<Inventory> {
 	}
 	public boolean canDamage() {
 		return this.damage > 0;
-	}
-
-	@Override
-	public Identifier getId() {
-		return this.id;
 	}
 
 	@Override
